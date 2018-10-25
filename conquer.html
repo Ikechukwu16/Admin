@@ -3,81 +3,112 @@
     <head>
         <style>
             .topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #808080;
-}
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #808080;
+			}
 			li {
-    float: left;}
+				float: left;}
 			li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+				display: block;
+				text-align: center;
+				padding: 7.5px 5px;
+				text-decoration: none;
+			}
 			li a:hover {
-    background-color: #111;}
+				background-color: #111;}
             .active {
-    background-color: #D3D3D3;}
-	.centered {
-	margin: 10;
-	text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+				background-color: #D3D3D3;}
 			div.horizontal {
-    display: flex;
-    justify-content: center;
-}
-
+				display: flex;
+				justify-content: center;
+			}
 			div.vertical {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-	}
-	div p { background-color: #D3D3D3;}
-			
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			.overlay-image {
+				position: relative;
+				width: 100%;
+			}
+			.overlay-image .image {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			.overlay-image .text {
+				color: #fff;
+				 font-size: 13px;
+				 line-height: 1.5em;
+				 text-align: center;
+				 position: absolute;
+				 top: 50%;
+				 left: 50%;
+				 transform: translate(-50%, -50%);
+				 width: 100%;
+			}
         </style>
     </head>  
     <body>
-	<center>
-        <ul class="topnav" align="center">
-            <li><a class="active" href="#home">Home</a>
-            <li><a href="#about us">About Us</a>
-            <li><a href="#services">Services</a>
-            <li><a href="#contact">Contact</a>
-            <li><a href="#external">External</a>
+        <ul class="topnav">
+            <li><a class="active" href="#home"><button>Homepage</button></a>
+            <li><a href="#about us"><button>About Us</button></a>
+            <li><a href="#services"><button>Services</button></a>
+            <li><a href="#contact"><button>Contact</button></a>
+            <li><a href="#external"><button>External</button></a>
         </ul>
-		<div class="container">
+		<div class="overlay-image">
 			<img src="vegetation.jpg" alt="Vegetation" style="width:100%;height:150px;">
-		<div class="centered">
-            <h1>CONQUER</h1>
-			<h3>Simple Bootstrap Template</h3>
-		</div>		
+			<div class="normal">
+				<div class="text">
+					<h1>CONQUER</h1>
+					<p>Simple Bootstrap Template<p>
+				</div>		
+			</div>		
 		</div>
 		<div class="horizontal div1">
-		<div class="vertical">
-			<img src="forest.jpg" alt="Vegetation" style="width:100%;height:150px;" vspace="30" hspace="10">
-			<img src="bridge.jpg" alt="Beautiful Bridge" style="width:100%;height:150px;" vspace="30" hspace="10">
-			<img src="railway.jpg" alt="Railway Line" style="width:100%;height:150px;" vspace="30" hspace="10">
-        </div>
+			<div class="vertical">
+				<img src="forest.jpg" alt="Vegetation" style="width:20%;height:150px;" vspace="30" hspace="10">
+				<img src="bridge.jpg" alt="Beautiful Bridge" style="width:20%;height:150px;" vspace="30" hspace="10">
+				<img src="railway.jpg" alt="Railway Line" style="width:20%;height:150px;" vspace="30" hspace="10">
+			</div>
 		</div>
 		<div class="horizontal div2">
-        <div class="vertical">
-            <img src="a waterdrop.jpg" style="width:100%;height:150px;" vspace="10" hspace="10">
-			<img src="a sunset.jpg" alt="Lovely Sunset" style="width:47%;height:150px;" vspace="10" hspace="10">
+			<div class="vertical">
+				<img src="a waterdrop.jpg" style="width:32%;height:150px;" vspace="10" hspace="10">
+				<img src="a sunset.jpg" alt="Lovely Sunset" style="width:32%;height:150px;" vspace="10" hspace="10">
+			</div>
         </div>
+		<div class="overlay-image">
+			<img src="by the pool.jpg" alt="Wanna Swim?" style="width:100%;height:150px;">
+            <div class="normal">
+				<div class="text">
+					<h1>Our Services</h1>
+					<p>Ham lion now sorted Vulputate developer pill, rather than the main entrance. However, this<br> 
+					gas networks. Performance at the free protein with the makeup outdoor skirt.<br>
+					Even one of my bow casino sauce.</p>
+				</div>
+			</div>
+		</div>
+		<div class="horizontal div3">
+			<div class="vertical">
+				<img src="wow.jpg" alt="So Creative" style="width:15%;height:150px;" vspace="10" hspace="10">
+				<img src="mirror image.jpg" alt="Reflection" style="width:15%;height:150px;" vspace="10" hspace="10">
+				<img src="sky scrappers.jpg" alt="So Tall" style="width:15%;height:150px;" vspace="10" hspace="10">
+				<img src="speechless.jpg" alt="Just so Lovely" style="width:15%;height:150px;" vspace="10" hspace="10">
+			</div>
         </div>
-			<div class="container">
-			<img src="vegetation.jpg" alt="Vegetation" style="width:100%;height:150px;">
-		<div class="centered" style="margin: 10; text-align: center; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);">
-            <h1>Our Services</h1>
-			<p>Simple Bootstrap Template</p>
-		</div>			
+		<div style="width:image; font-size:80%; text-align:center">
+			<img src="storey building.jpg" alt="alternate text" width="35%" height="150px" transform="translate(93%, -1%)" vspace="30" style="padding-bottom:0.5em;"> 
+		</div>
+		<div class="overlay-image">
+			<img class="image" src="zig-zag.jpg" alt="alternate text" style="width:100%;height:150px;" />
+			<div class="normal">
+				<div class="text">Contact Form</div>
+			</div>
+		</div>
 	</body>
 </html>  
